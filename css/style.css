@@ -36,46 +36,24 @@
     align-items: center;
 }
 
-.select {
-    appearance: none;
-    border: none;
-    color: white;
-    background-color: transparent;
-    text-transform: uppercase;
-    outline: none;
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-
-    cursor: pointer;
-}
-
-.select-wrap {
-    margin-right: 50px;
-    position: relative;
-    width: 50px;
-}
-
-.select-wrap::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: url('../img/arrow.svg') no-repeat;
-    pointer-events: none;
-}
-
 .header__icons {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 30px;
     padding-top: 12px;
-    padding-left: 24px;
+    padding-left: 8px;
+}
+
+.header__icons::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .header__icon {
@@ -95,4 +73,43 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.jq-selectbox__select {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 7px;
+    right: -9px;
+    width: 8px;
+    height: 4px;
+    background: url('../img/arrow.svg') no-repeat center;
+
+}
+
+.jq-selectbox__dropdown {
+    top: 29px !important;
+    left: -8px;
+    padding: 5px 24px 5px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.jq-selectbox__dropdown li {
+    transition: all .4s;
+}
+
+.jq-selectbox__dropdown li:hover {
+    color: #FFB548;
+    cursor: pointer;
 }
