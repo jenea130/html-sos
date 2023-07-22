@@ -157,6 +157,9 @@
     transition: all .4s;
 }
 
+.jq-selectbox {
+    cursor: pointer;
+}
 
 .jq-selectbox__select {
     position: relative;
@@ -169,7 +172,7 @@
 .jq-selectbox__trigger-arrow {
     position: absolute;
     top: 7px;
-    right: -9px;
+    right: -11px;
     width: 8px;
     height: 4px;
     background: url('../img/arrow.svg') no-repeat center;
@@ -195,4 +198,124 @@
 .jq-selectbox__dropdown li:hover {
     color: #FFB548;
     cursor: pointer;
+}
+
+.about {
+    position: relative;
+}
+
+.about__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.about .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__content {
+    width: 50%;
+}
+
+.slider {
+    width: 50%;
+}
+
+.slider__img {
+    position: relative;
+    width: 502px;
+    height: 610px;
+    z-index: 3;
+}
+
+.slider__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.slider__img:nth-of-type(2),
+.slider__img:nth-of-type(3) {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    transform: scale(.9);
+    z-index: 2;
+}
+
+.slider__img:nth-of-type(3) {
+    right: -80px;
+    z-index: 1;
+    transform: scale(.8);
+}
+
+.slider__container {
+    position: relative;
+    z-index: 1;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__dots li {
+    position: relative;
+    flex: 0 0 14px;
+    margin: 0 26px;
+    height: 14px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.slider__dots li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    width: 0;
+    height: 2px;
+    object-fit: cover;
+    background: white;
+    transition: all .4s;
+    opacity: 0;
+}
+
+.slider__dots li:hover {
+    
+    background: white;
+}
+
+.slider__dots li:hover:after {
+    width: 30px;
+    opacity: 1;
 }

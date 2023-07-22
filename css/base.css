@@ -15,6 +15,7 @@ body {
     font-family: var(--font-1);
     color: white;
     background: #080a0b;
+    padding-bottom: 3000px;
 }
 
 img {
