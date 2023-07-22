@@ -73,7 +73,90 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1;
 }
+
+.home-intro .container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-intro__title {
+    padding-top: 286px;
+    margin-bottom: 137px;
+    font-family: var(--font-2);
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.home-intro__text {
+    margin-bottom: 142px;
+    font-family: var(--font-2);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-intro__btn {
+    position: relative;
+    display: table;
+    margin: 0 auto 142px;
+    padding: 20px 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1917;
+    border-radius: 4px;
+    background: var(--accent);
+    transition: all .4s;
+}
+
+.home-intro__btn:hover {
+    transform: scale(.97);
+    color: var(--accent);
+    background: var(--dark);
+
+}
+
+.home-intro__btn:hover span {
+    border-color: var(--accent);
+}
+
+.home-intro__btn span {
+    display: inline-block;
+    margin-right: 14px;
+    padding-right: 11px;
+    border-right: 1px solid rgba(26, 25, 23, 0.5);
+
+}
+
+.home-intro__down {
+    display: table;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.home-intro__down:hover svg {
+    transform: translateY(10px);
+}
+
+.home-intro__down span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.home-intro__down svg {
+    position: relative;
+    transition: all .4s;
+}
+
 
 .jq-selectbox__select {
     position: relative;

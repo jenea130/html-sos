@@ -13,7 +13,7 @@ body {
     position: relative;
     font-size: 18px;
     font-family: var(--font-1);
-    color: var(--accent);
+    color: white;
     background: #080a0b;
 }
 
