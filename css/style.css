@@ -202,7 +202,12 @@
 
 .about {
     position: relative;
+    padding-top: 200px;
+
+    padding-bottom: 200px;
+    height: 961px;
 }
+
 
 .about__bg {
     position: absolute;
@@ -225,11 +230,12 @@
 }
 
 .about__content {
+    padding-top: 56px;
     width: 50%;
 }
 
-.slider {
-    width: 50%;
+.about__slider {
+    width: 53%;
 }
 
 .slider__img {
@@ -246,22 +252,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    border-radius: 8px;
+
 }
 
 .slider__img:nth-of-type(2),
 .slider__img:nth-of-type(3) {
     position: absolute;
     top: 0;
-    right: -50px;
-    transform: scale(.9);
+    right: 74px;
+    transform: scale(.93);
     z-index: 2;
 }
 
 .slider__img:nth-of-type(3) {
-    right: -80px;
+    right: 28px;
     z-index: 1;
-    transform: scale(.8);
+    transform: scale(.84);
 }
 
 .slider__container {
@@ -271,8 +278,8 @@
 
 .slider__btn {
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 48%;
+    right: 29px;
     z-index: 2;
     border: none;
     background: transparent;
@@ -281,8 +288,12 @@
 }
 
 .slider__dots {
+    position: relative;
+    top: -40px;
+    left: -51px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .slider__dots li {
@@ -311,11 +322,76 @@
 }
 
 .slider__dots li:hover {
-    
+
     background: white;
 }
 
 .slider__dots li:hover:after {
     width: 30px;
     opacity: 1;
+}
+
+.about__label {
+    margin-bottom: 14px;
+    font-family: var(--font-2);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.about__title {
+    position: relative;
+    padding-bottom: 67px;
+    font-family: var(--font-2);
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about__title::after {
+    position: absolute;
+    content: "";
+    bottom: 62px;
+    left: 2px;
+    width: 711px;
+    height: 3px;
+    background: #fff;
+    z-index: 5;
+}
+
+.about__text {
+    margin-left: 188px;
+    width: 364px;
+}
+
+.about__text p {
+    margin-bottom: 20px;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.about__text a {
+    position: relative;
+}
+
+.about__text a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--accent);
+    opacity: 1;
+    transition: all .4s;
+}
+
+.about__text a:hover:after {
+    opacity: 0;
 }

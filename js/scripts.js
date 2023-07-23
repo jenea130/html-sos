@@ -9,4 +9,12 @@ $(document).ready(function () {
 
         // }
     });
+    $('.home-intro__down').on('click', function (e) {
+        e.preventDefault();
+        const id = $(this).attr('href');
+        console.log(id);
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    });
 });
