@@ -93,3 +93,69 @@ p {
     color: white;
     background: var(--contrast-hover);
 }
+
+.label {
+    font-family: var(--font-2);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title {
+    position: relative;
+    font-family: var(--font-2);
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title::after {
+    position: absolute;
+    display: none;
+    content: "";
+    bottom: 0;
+    left: 2px;
+    width: 711px;
+    height: 3px;
+    background: #fff;
+    z-index: 5;
+}
+
+.title.title--line::after {
+    display: block;
+}
+
+.text p {
+    margin-bottom: 20px;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.text a {
+    position: relative;
+}
+
+.text a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--accent);
+    opacity: 1;
+    transition: all .4s;
+}
+
+.text a:hover:after {
+    opacity: 0;
+}

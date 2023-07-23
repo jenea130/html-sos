@@ -203,7 +203,7 @@
 .about {
     position: relative;
     padding-top: 200px;
-
+    margin-bottom: 90px;
     padding-bottom: 200px;
     height: 961px;
 }
@@ -333,33 +333,10 @@
 
 .about__label {
     margin-bottom: 14px;
-    font-family: var(--font-2);
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
 }
 
 .about__title {
-    position: relative;
-    padding-bottom: 67px;
-    font-family: var(--font-2);
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.about__title::after {
-    position: absolute;
-    content: "";
-    bottom: 62px;
-    left: 2px;
-    width: 711px;
-    height: 3px;
-    background: #fff;
-    z-index: 5;
+    margin-bottom: 67px;
 }
 
 .about__text {
@@ -367,31 +344,95 @@
     width: 364px;
 }
 
-.about__text p {
-    margin-bottom: 20px;
-    font-family: var(--font-1);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: justify;
-}
-
-.about__text a {
+.features {
     position: relative;
+    padding: 168px 0 231px;
 }
 
-.about__text a:after {
-    content: "";
+.features__bg {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 5px;
-    background: var(--accent);
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    object-position: 31% 50%;
+}
+
+.features .container {
+    position: relative;
+    z-index: 2;
+}
+
+.features__content {
+    padding-left: 678px;
+}
+
+.features__label {
+    margin-bottom: 12px;
+}
+
+.features__title {
+    margin-bottom: 64px;
+}
+
+
+
+.accordion__item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 36px;
+}
+
+.accordion__item.active::before {
+    background: white;
+}
+
+.accordion__item.active::after {
     opacity: 1;
+}
+
+.accordion__item::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid white;
+    border-radius: 50%;
     transition: all .4s;
 }
 
-.about__text a:hover:after {
+.accordion__item::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    width: 1px;
+    height: 115%;
+    background: white;
     opacity: 0;
+    transition: all .4s;
+}
+
+.accordion__item:last-of-type::after {
+    display: none;
+}
+
+.accordion__title {
+    margin-bottom: 3px;
+    font-family: var(--font-2);
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.accordion__text {
+    display: none;
+    padding: 5px 117px 3px 0;
 }
