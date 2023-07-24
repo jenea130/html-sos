@@ -15,7 +15,7 @@ body {
     font-family: var(--font-1);
     color: white;
     background: #080a0b;
-    padding-bottom: 3000px;
+    padding-bottom: 500px;
 }
 
 img {
@@ -78,11 +78,12 @@ p {
 .btn {
     display: inline-flex;
     justify-content: center;
-    padding: 27px 54px;
+    padding: 19px 31px;
     font-family: var(--font-1);
-    font-size: 18px;
-    color: white;
-    background: var(--contrast);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    background: var(--accent);
     border-radius: 5px;
     transition: all .4s;
     cursor: pointer;
@@ -90,8 +91,8 @@ p {
 }
 
 .btn:hover {
-    color: white;
-    background: var(--contrast-hover);
+    color: var(--accent);
+    background: var(--dark);
 }
 
 .label {
