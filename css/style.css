@@ -504,7 +504,7 @@
 .quotes {
     position: relative;
     padding: 160px 0 100px;
-    margin-bottom: 15px;
+    margin-bottom: 63px;
 }
 
 .quotes__bg {
@@ -633,7 +633,7 @@
 }
 
 .letter {
-    padding-top: 50px;
+    margin-bottom: -2px;
 }
 
 .letter__wrap {
@@ -701,4 +701,83 @@
 
 .letter__btn {
     width: 260px;
+}
+
+.footer-top {
+    margin-bottom: 23px;
+}
+
+.footer-top__wrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-top__logo {
+    margin-right: 166px;
+}
+
+.footer-top__menu {
+    display: flex;
+    margin-right: auto;
+    padding-top: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.footer-top__menu a {
+    margin-right: 49px;
+}
+
+.footer-top__social {
+    display: flex;
+    padding-top: 39px;
+}
+
+.footer-top__social a svg {
+    fill: white;
+}
+
+.footer-top__social a:hover svg {
+    fill: #FF1313;
+}
+
+.footer-top__social li {
+    margin-left: 60px;
+}
+
+.footer-top__social li:first-of-type {
+    margin-left: 0;
+}
+
+.footer-bottom__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 49px;
+}
+
+.footer-bottom__copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom__menu {
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.footer-bottom__menu a {
+    padding: 0 8px;
+    border-right: 2px solid white;
+}
+
+.footer-bottom__menu li:last-of-type a {
+    padding-right: 0;
+    border: 0;
 }
