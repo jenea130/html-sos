@@ -739,6 +739,7 @@
 
 .footer-top__social a svg {
     fill: white;
+    transition: all 0.4s;
 }
 
 .footer-top__social a:hover svg {
